@@ -41,6 +41,10 @@ def process_recognized_string(r):
     start_word = r[0]
     rest_word = " ".join(r[1:])
 
+    if start_word == "please":
+        start_word = r[1]
+        rest_word = " ".join(r[2:])
+
     # Keyword matching
     if match_intent(start_word, "google", "search", "find"):
         url = GOOGLE_SEARCH_URL.format(rest_word)
