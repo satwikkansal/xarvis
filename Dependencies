@@ -1,0 +1,8 @@
+Dependencies
+
+pyaudio
+xsel
+google-python-api-client
+speech_recognition
+sudo apt-get install sox
+xbindkeys
